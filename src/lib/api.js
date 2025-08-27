@@ -1,4 +1,6 @@
-const BASE = import.meta.env.VITE_API_BASE || 'https://docvai-dashboard-git-main-tubaycom-gmailcoms-projects.vercel.app';
+// src/lib/api.js
+const BASE = import.meta.env.VITE_API_BASE || '';   // ← empty = same origin
+
 
 async function req(path, opts = {}) {
   const token = localStorage.getItem('token');
