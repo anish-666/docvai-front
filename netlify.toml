@@ -2,7 +2,7 @@
   command = "npm install && npm run build"
   publish = "dist"
 
-# PROXY: send all /api/* from Netlify → Vercel API
+# PROXY: Netlify /api/*  →  Vercel API /api/*
 [[redirects]]
   from = "/api/*"
   to   = "https://docvai-dashboard-git-main-tubaycom-gmailcoms-projects.vercel.app/api/:splat"
