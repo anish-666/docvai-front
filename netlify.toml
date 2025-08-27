@@ -1,12 +1,8 @@
 [build]
-  command = "npm ci && npm run build"
+  command = "npm install && npm run build"
   publish = "dist"
 
-[build.environment]
-  NODE_VERSION = "18"
-  VITE_API_BASE = "https://docvai-dashboard-git-main-tubaycom-gmailcoms-projects.vercel.app"
-
-# SPA routing fallback (works same as _redirects)
+# SPA fallback (keep this)
 [[redirects]]
   from = "/*"
   to = "/index.html"
