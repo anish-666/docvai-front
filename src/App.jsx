@@ -13,7 +13,7 @@ function Nav() {
   const logout = () => { localStorage.removeItem('token'); nav('/login') }
   return (
     <nav>
-      <strong>Bolna Dashboard</strong>
+      <strong>Docvai Dashboard</strong>
       <Link to="/overview">Overview</Link>
       <Link to="/conversations">Conversations</Link>
       <Link to="/campaigns">Campaigns</Link>
